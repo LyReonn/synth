@@ -280,7 +280,7 @@ function freqAnalyser()
   for (var i = 0; i < data.length; i++)
   {
     x = Math.log10(i+1) / Math.log10(data.length) * w;
-    y = (1 - data[i] / 256) * h + 75;
+    y = (1 - data[i] / 256) * h + 5;
     graph.lineTo(x, y);
   }
 

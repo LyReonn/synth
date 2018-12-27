@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0;" />
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+<title>A Simple Synth by LyReonn</title>
+
+</head>
+
+<body>
+
+<div id="synthesizer">
+
+  <div id="interface">
+    <div id="octave_frame" class="frame_common">
+      <input id="oct_down" class="btn_common" type="button" value="-">
+      <span id="oct_disp">4</span>
+      <input id="oct_up" class="btn_common" type="button" value="+">
+      <span id="oct_label">OCT</span>
+    </div>
+    <div id="gliss_frame" class="frame_common">
+      <input id="gliss_btn" class="btn_common" type="button">
+      <input id="gliss_bar" class="btn_common" type="button">
+      <span id="gliss_label">GLISS</span>
+    </div>
+    <input id="reset_btn" class="btn_common" type="button" value="RESET">
+  </div>
+
+  <div id="keyboard">
+    <span id="0" class="keys white_key">C</span>
+    <span id="1" class="keys black_key">L</span>
+    <span id="2" class="keys white_key">D</span>
+    <span id="3" class="keys black_key">Y</span>
+    <span id="4" class="keys white_key">E</span>
+    <span id="5" class="keys white_key">F</span>
+    <span id="6" class="keys black_key">R</span>
+    <span id="7" class="keys white_key">G</span>
+    <span id="8" class="keys black_key">E</span>
+    <span id="9" class="keys white_key">A</span>
+    <span id="10" class="keys black_key">O</span>
+    <span id="11" class="keys white_key">B</span>
+    <span id="12" class="keys white_key">C</span>
+    <span id="13" class="keys black_key">N</span>
+    <span id="14" class="keys white_key">D</span>
+    <span id="15" class="keys black_key">N</span>
+    <span id="16" class="keys white_key">E</span>
+  </div>
+
+</div>
+
+<!--
+<br>current x coordinate: 
+<span id="x_disp">(works only on gliss mode)</span>
+<br>current element id:   
+<span id="target_disp">(works only on gliss mode)</span>
+-->
+
+<canvas id="analyser"></canvas>
+
+<hr>
+<span>李海清-MP15-96-《音乐类在线应用的设计与开发》课程作业</span>
+<br>
+<a href="mailto:lyreonn@icloud.com">>📧联系我！<</a>
+
+</body>
+
+</html>
